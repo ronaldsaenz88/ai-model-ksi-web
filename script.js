@@ -561,7 +561,7 @@ $(document).ready(function () {
 
         $.ajax({
             //url: "http://localhost:12345/predict/" + modelName,
-            url: "https://supervising-learning-ksi-api.herokuapp.com/predict/" + modelName,
+            url: "https://supervising-learning-ksi-api.herokuapp.com/api/predict/" + modelName,
             dataType: 'json',
             type: 'post',
             contentType: 'application/json',
@@ -592,7 +592,7 @@ $(document).ready(function () {
 
         $.ajax({
             //url: "http://localhost:12345/scores/" + modelName,
-            url: "https://supervising-learning-ksi-api.herokuapp.com/scores/" + modelName,
+            url: "https://supervising-learning-ksi-api.herokuapp.com/api/scores/" + modelName,
 
             success: function (result,status,xhr) {
 
